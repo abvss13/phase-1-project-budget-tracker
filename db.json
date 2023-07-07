@@ -1,0 +1,61 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Groceries"
+      },
+      {
+        "id": 2,
+        "name": "Utilities"
+      },
+      {
+        "id": 3,
+        "name": "Transportation"
+      },
+      {
+        "id": 4,
+        "name": "Entertainment"
+      },
+      {
+        "id": 5,
+        "name": "Emergencies"
+      }
+    ],
+    "transactions": [
+      {
+        "id": 1,
+        "category_id": 1,
+        "description": "Grocery shopping",
+        "amount": 5000,
+        "date": "2023-07-01"
+      },
+      {
+        "id": 2,
+        "category_id": 2,
+        "description": "Electricity bill",
+        "amount": 7500,
+        "date": "2023-07-02"
+      },
+      {
+        "id": 3,
+        "category_id": 3,
+        "description": "Fuel",
+        "amount": 3000,
+        "date": "2023-07-03"
+      },
+      {
+        "id": 4,
+        "category_id": 4,
+        "description": "Movie tickets",
+        "amount": 2000,
+        "date": "2023-07-04"
+      },
+      {
+        "id": 5,
+        "category_id": 5,
+        "description": "Emergencies",
+        "amount": 87000
+      }
+    ]
+  }
+  
