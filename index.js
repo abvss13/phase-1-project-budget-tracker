@@ -51,3 +51,6 @@ transactionList.addEventListener('click', function(event) {
     }
   });
   
+  //  Delete transaction item
+const transactionItem = event.target.closest('.transaction-item');
+transactionItem.remove();
