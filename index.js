@@ -4,22 +4,22 @@ const transactionList = document.getElementById('transaction-list');
 
 //  Populate categories
 db.categories.forEach(category => {
-    const option = document.createElement('option');
-    option.value = category.id;
-    option.textContent = category.name;
-    categorySelect.appendChild(option);
-  });
-  
-  //  Handle form submission
+  const option = document.createElement('option');
+  option.value = category.id;
+  option.textContent = category.name;
+  categorySelect.appendChild(option);
+});
+
+//  Handle form submission
 transactionForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-  
-    const category = categorySelect.value;
-    const description = document.getElementById('description').value;
-    const amount = document.getElementById('amount').value;
-  
-    //  Retrieve form values
-if (category && description && amount) {
+  event.preventDefault();
+
+  const category = categorySelect.value;
+  const description = document.getElementById('description').value;
+  const amount = document.getElementById('amount').value;
+
+  //  Retrieve form values
+  if (category && description && amount) {
     // Create a new transaction item
     const transactionItem = document.createElement('div');
     transactionItem.classList.add('transaction-item');
@@ -34,23 +34,21 @@ if (category && description && amount) {
         <button class="btn btn-link">Delete</button>
       </div>
     `;
-  
-    //  Add transaction item to the list
-transactionList.appendChild(transactionItem);
 
-//  Reset form values
-categorySelect.value = '';
-document.getElementById('description').value = '';
-document.getElementById('amount').value = '';
+    //  Add transaction item to the list
+    transactionList.appendChild(transactionItem);
+
+    //  Reset form values
+    categorySelect.value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('amount').value = '';
+  }
+});
 
 //  Handle transaction deletion
 transactionList.addEventListener('click', function(event) {
-    if (event.target.classList.contains('btn')) {
-      const transactionItem = event.target.closest('.transaction-item');
-      transactionItem.remove();
-    }
-  });
-  
-  //  Delete transaction item
-const transactionItem = event.target.closest('.transaction-item');
-transactionItem.remove();
+  if (event.target.classList.contains('btn')) {
+    const transactionItem = event.target.closest('.transaction-item');
+    transactionItem.remove();
+  }
+});
