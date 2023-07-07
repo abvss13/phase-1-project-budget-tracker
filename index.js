@@ -35,3 +35,5 @@ if (category && description && amount) {
       </div>
     `;
   
+    //  Add transaction item to the list
+transactionList.appendChild(transactionItem);
