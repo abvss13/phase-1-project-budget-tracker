@@ -30,8 +30,7 @@ To use the Budget Tracker application locally, follow these steps:
 5. Click the "Add Transaction" button to add the transaction to the list.
 6. To delete a transaction, click the "Delete" button next to the transaction item.
 
-## Contributing
-Contributions to the Budget Tracker project are welcome and encouraged! If you have any bug reports, feature requests, or suggestions, please submit them through the [issue tracker](<repository_url>/issues). When contributing to this repository, please first discuss the change you wish to make via the issue tracker or email.
+
 
 ## License
 This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
