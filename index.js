@@ -18,3 +18,20 @@ transactionForm.addEventListener('submit', function(event) {
     const description = document.getElementById('description').value;
     const amount = document.getElementById('amount').value;
   
+    //  Retrieve form values
+if (category && description && amount) {
+    // Create a new transaction item
+    const transactionItem = document.createElement('div');
+    transactionItem.classList.add('transaction-item');
+    transactionItem.innerHTML = `
+      <div class="transaction-info">
+        <span>${description}</span>
+      </div>
+      <div class="transaction-amount">
+        Ksh ${amount}
+      </div>
+      <div class="transaction-delete">
+        <button class="btn btn-link">Delete</button>
+      </div>
+    `;
+  
