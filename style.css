@@ -1,7 +1,6 @@
-
 body {
     padding: 20px;
-    background-color: #98c1eb;
+    background-color: #7ab1e7;
     color: #9c9292;
   }
   
@@ -10,10 +9,91 @@ body {
     background-color: rgb(56, 94, 59);
   }
   
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
   form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #622fb6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d66523;
+  }
+  
+  #transaction-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .transaction-item {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: default;
+  }
+  
+  .transaction-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .transaction-item .transaction-info {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .transaction-item .transaction-amount {
+    font-weight: bold;
+  }
+  
+  .transaction-item .transaction-delete {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  .transaction-item .transaction-delete:hover {
+    color: #9e2121;
   }
   
