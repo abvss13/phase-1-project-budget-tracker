@@ -37,3 +37,8 @@ if (category && description && amount) {
   
     //  Add transaction item to the list
 transactionList.appendChild(transactionItem);
+
+//  Reset form values
+categorySelect.value = '';
+document.getElementById('description').value = '';
+document.getElementById('amount').value = '';
