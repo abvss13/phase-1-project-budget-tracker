@@ -42,3 +42,12 @@ transactionList.appendChild(transactionItem);
 categorySelect.value = '';
 document.getElementById('description').value = '';
 document.getElementById('amount').value = '';
+
+//  Handle transaction deletion
+transactionList.addEventListener('click', function(event) {
+    if (event.target.classList.contains('btn')) {
+      const transactionItem = event.target.closest('.transaction-item');
+      transactionItem.remove();
+    }
+  });
+  
