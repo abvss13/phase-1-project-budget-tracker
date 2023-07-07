@@ -5,3 +5,8 @@ body {
     color: #9c9292;
   }
   
+  h1 {
+    text-align: center;
+    background-color: rgb(56, 94, 59);
+  }
+  
