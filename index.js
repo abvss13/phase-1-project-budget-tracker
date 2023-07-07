@@ -10,3 +10,11 @@ db.categories.forEach(category => {
     categorySelect.appendChild(option);
   });
   
+  //  Handle form submission
+transactionForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const category = categorySelect.value;
+    const description = document.getElementById('description').value;
+    const amount = document.getElementById('amount').value;
+  
